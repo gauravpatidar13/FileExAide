@@ -3,4 +3,7 @@
     <color name="colorPrimary">#bcadfc</color>
 	<color name="colorPrimaryDark">#bcadfc</color>
 	<color name="colorStatusBar">#bca98c</color>	
+	<color name="colorSwipeLeft">#6d8ecc</color>
+	<color name="colorSwipeRight">#fdbdab</color>
+	
 </resources>

@@ -3,15 +3,20 @@ package com.aide;
 import android.app.*;
 import android.os.*;
 import android.view.*;
-import android.widget.*;
 import android.content.pm.*;
 import android.content.*;
 import android.support.v7.widget.Toolbar;
 import android.support.v7.app.*;
+import android.support.v7.widget.*;
+import android.widget.Toast;
+import android.widget.SearchView.*;
+import android.widget.SearchView;
+import android.widget.*;
 
 public class MainActivity extends AppCompatActivity
 {
 	Toolbar toolbar;
+	SearchView sv;
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
@@ -26,6 +31,14 @@ public class MainActivity extends AppCompatActivity
 		if (checkPermit())
 		{
 			String path=Environment.getExternalStorageDirectory().getAbsolutePath();
+			Toast toast=new Toast(MainActivity.this);
+			View vi=LayoutInflater.from(this).inflate(R.layout.layout_custom_toast,null);
+			TextView txt=vi.findViewById(R.id.txt_toast);
+			txt.setText("Hello Android by Aide App");
+			toast.setView(vi);
+			toast.setDuration(Toast.LENGTH_LONG);
+			toast.setGravity(Gravity.BOTTOM,12,12);
+			toast.show();
 			//Toast.makeText(this, path, Toast.LENGTH_SHORT).show();
 			Intent i=new Intent(this,ShowFileAndFolderActivity.class);
 			i.putExtra("path",path);
@@ -62,6 +75,7 @@ public class MainActivity extends AppCompatActivity
 	public boolean onCreateOptionsMenu(Menu menu)
 	{
 		getMenuInflater().inflate(R.menu.menu_main,menu);
+		
 		return true;
 	}
 	

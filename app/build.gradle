@@ -6,7 +6,7 @@ android {
 
     defaultConfig {
         applicationId "com.aide"
-        minSdkVersion 14
+        minSdkVersion 15
         targetSdkVersion 29
         versionCode 1
         versionName "1.0"
@@ -20,7 +20,9 @@ android {
 }
 
 dependencies {
+	api 'com.android.support:design:25.+'
 	api 'com.android.support:appcompat-v7:25.+'
 	api 'com.android.support:recyclerview-v7:25.+'
+	api 'it.xabaras.android:recyclerview-swipedecorator:1.2.3'
     compile fileTree(dir: 'libs', include: ['*.jar'])
 }
