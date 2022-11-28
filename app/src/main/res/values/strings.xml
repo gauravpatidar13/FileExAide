@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">FileEx</string>
+	<string name="storage">Storage</string>
+    <string name="hello_world">Hello world!</string>
+	<string name="permit">Please allow Read External Storage Permission from Settings</string>
+	<string name="no_file_and_folder">No File And Folder</string>
+</resources>

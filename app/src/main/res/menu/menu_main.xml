@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	>
+    
+    <item
+        android:id="@+id/three_dots"
+        android:title=""
+		app:showAsAction="always"
+		android:icon="@drawable/more">
+		<menu>
+			<item
+				android:id="@+id/menu_cut"
+				android:title="Cut"
+				app:showAsAction="never"
+				android:icon="@drawable/cut"
+			/>
+			<item
+				android:id="@+id/menu_copy"
+				android:title="Copy"
+				app:showAsAction="never"
+				android:icon="@drawable/copy"
+			/>
+			<item
+				android:id="@+id/menu_paste"
+				android:title="Paste"
+				app:showAsAction="never"
+				android:icon="@drawable/paste"
+			/>
+		</menu>
+	</item>
+    
+</menu>
